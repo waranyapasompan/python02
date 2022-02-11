@@ -1,0 +1,10 @@
+f = open('data.bin', 'wb')
+txt = bytes('Python Programming ','utf-8')
+txt += bytes('hello','utf-8')
+f.write(txt)
+f.close()
+
+print("อ่านข้อมูลจาก binary file \n")
+f = open('data','rb')
+print(f.read())
+f.close()
